@@ -427,6 +427,35 @@ a {
     font-size: 1rem;
 }
 
+.form {
+    width: 50%;
+    margin-left: 150px;
+}
+
+.form h1 {
+    margin: 0;
+    margin-top: 20px !important;
+    font-size: 28px;
+}
+
+.form input[type="text"] {
+    width: 250px;
+    font-family: 'Montserrat', sans-serif;
+    border: solid 1px gray;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.form textarea {
+    width: 500px;
+    height: 200px;
+    resize: none;
+    font-family: 'Montserrat', sans-serif;
+    border: solid 1px gray;
+    border-radius: 7px;
+    padding: 5px;
+}
+
 /* Responsive Design for Smaller Screens */
 @media screen and (max-width: 768px) {
     .footer-container {
