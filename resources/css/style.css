@@ -1,0 +1,495 @@
+@font-face {
+    font-family: 'Playlist';
+    src: url('../fonts/Playlist.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General Reset */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: 'Playlist', sans-serif;
+    font-weight: normal;
+}
+
+hr {
+    width: 50%;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.button {
+    background-color: #E9BDAC;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+}
+
+.button-dark-outline {
+    background-color: none;
+    border: solid 1px white;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+/* Navbar Styling */
+.announcement-banner {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px 0px;
+}
+
+.announcement-banner p {
+    margin: 0px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    background-color: #E9BDAC;
+    color: black;
+    padding: 5px 0px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-family: 'Playlist', sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding-right: 20px;
+}
+
+.nav-link {
+    color: black; /* Default color */
+    text-decoration: none;
+}
+
+.nav-link.active {
+    font-weight: bold !important;
+    font-size: 200px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.mobile-menu .menu-bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+/* Home Section Styling */
+.home-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.home-content {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.home-gif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Signatures Section Styling */
+.signatures-section {
+    padding: 50px 20px;
+    background-color: white;
+    color: black;
+}
+
+.signatures-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.menu-header {
+    flex: 1;
+    padding-right: 20px;
+    /* Space between text and image */
+}
+
+.menu-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.menu-header p {
+    font-size: 1.2rem;
+}
+
+.menu-image {
+    flex: 1;
+}
+
+.menu-image img {
+    width: 100%;
+    /* Adjust width to fit container */
+    max-width: 400px;
+    /* Limit maximum size */
+    height: auto;
+}
+
+/* Drink Gallery Styling */
+.drink-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* Responsive grid */
+    gap: 20px;
+    /* Spacing between items */
+}
+
+.drink-item {
+    text-align: center;
+}
+
+.drink-item img {
+    width: 100%;
+    max-width: 150px;
+    /* Adjust size of drink images */
+    height: auto;
+    border-radius: 10px;
+    /* Optional rounded corners */
+}
+
+.drink-item span {
+    display: block;
+    margin-top: 10px;
+}
+
+.home-cover {
+    width: 100%;
+    height: 90%;
+}
+
+.div-content {
+    display: flex;
+    padding: 10px 20px;
+    margin-top: 50px;
+}
+
+
+.div-products {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+.div-products img {
+    height: 300px;
+}
+
+.div-styled-by-you {
+    background-color: #E9BDAC;
+    padding: 10px 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 35px 0px;
+}
+
+.div-styled-by-you img {
+    height: 370px;
+    width: 320px;
+    object-fit: cover;
+}
+
+.div-styled-by-you h1 {
+    color: white;
+}
+
+.div-phone {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.div-phone img {
+    height: 650px;
+    width: auto;
+}
+
+.div-phone-area1 {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.div-phone-area2 {
+    display: flex;
+    flex: 1;
+    justify-content: start;
+    align-items: center;
+}
+
+.div-contact-us {
+    display: flex;
+    justify-content: center;
+    margin: 20px 50px;
+}
+
+.div-contact-us-area1 {
+    display: flex;
+    justify-content: end;
+    flex: 1;
+}
+
+.div-contact-us-area2 {
+    display: flex;
+    justify-content: start;
+    flex: 1;
+}
+
+.contact-social img {
+    height: 40px;
+}
+
+.div-about-us {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.div-about-us img {
+    height: 500px;
+    width: auto;
+}
+
+.div-about-us p {
+    text-align: justify;
+    line-height: 2;
+}
+
+.div-about-us-area1 {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+}
+
+.div-about-us-area2 {
+    display: flex;
+    flex: 1;
+    justify-content: start;
+    align-items: start;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: black;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+}
+
+/* FOOTER */
+/* Footer Section Styling */
+.footer-section {
+    background-color: #E9BDAC;
+    color: white;
+    padding: 50px 250px;
+    padding-bottom: 10px !important;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section li {
+    margin-bottom: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container-area {
+    flex: 1;
+}
+
+/* Footer Bottom Styling */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-bottom p {
+    font-size: 1rem;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .footer-about,
+    .footer-contact,
+    .footer-social {
+        margin-bottom: 20px;
+    }
+
+    .footer-about h2,
+    .footer-contact h3,
+    .footer-social h3 {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+    }
+
+    .footer-about p,
+    .footer-contact p,
+    .footer-social ul {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+
+    .footer-social ul {
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .footer-social li {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .footer-about h2,
+    .footer-contact h3,
+    .footer-social h3 {
+        font-size: 1.4rem;
+        margin-bottom: 8px;
+    }
+
+    .footer-about p,
+    .footer-contact p,
+    .footer-social ul {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .footer-container {
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .footer-bottom p {
+        font-size: 0.9rem;
+        margin-top: 15px;
+    }
+}
